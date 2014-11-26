@@ -2,73 +2,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+	<title>Cover Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/cover.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<style type="text/css">
+		.presentation-images img {
+			display:inline-block;
+			margin-top:20px;
+		}
+		.presentation-image {
+			border-radius: 25px;
+		}
+	</style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
   </head>
 
   <body>
 
-    <div class="site-wrapper">
+	<div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+	  <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+		<div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Unical</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Lectio</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+		  <div class="masthead clearfix">
+			<div class="inner">
+			  <h3 class="masthead-brand">Unical</h3>
+			  <nav>
+				<ul class="nav masthead-nav">
+				  <li class="active"><a href="#">Lectio</a></li>
+				</ul>
+			  </nav>
+			</div>
+		  </div>
 
-          <div class="inner cover">
-            <h1 class="cover-heading">Lectio as iCal</h1>
-            <p class="lead">Content</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Get url</a>
-            </p>
-          </div>
+		  <div class="" style="width:100vw !important; left:0px; position:fixed; top:20%;"><!-- inner cover -->
+			<h1 class="cover-heading">Lectio as iCal</h1>
+			<p class="lead">This service makes it easy to import your Lectio Timetable into Google Calendar or another calendar,
+			  to ease you with the planning.
+			</p>
+			<form class="form-horizontal" role="form" style="width:600px; margin-right:auto; margin-left:auto;">
+				<div class="form-group">
+					<div class="input-group">
+						<label class="control-label" style="text-align:center; padding-left:13%;">Your Lectio timetable URL</label>
+						<input type="text" placeholder="https://www.lectio.dk/lectio/517/SkemaNy.aspx?type=elev&elevid=4789793691" id="lectio_url" class="form-control">
+						<span class="input-group-btn"><button type="button" id="get_lectio_url" class="btn btn-default" style="margin-top:27px !important;"><b>Get url</b></button></span>
+					</div>
+				</div>
+				<div class="form-group" id="calendar_url">
+					<p>Your result will appear here!</p>
+				</div>
+			</form>
+			<div class="presentation-images">
+				<img src="img/lectio.png" width="460" height="262" class="img-responsive presentation-image">
+				<img src="img/fancy_arrow.png" style="margin-right:10px; margin-left:10px;" width="215" height="200" class="img-responsive">
+				<img src="img/google_calendar.png" width="548" height="262"  class="img-responsive presentation-image">
+		  	</div>
+		  </div>
 
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Copyright <a href="https://illution.dk">Illution</a> 2014</p>
-            </div>
-          </div>
+		  <div class="mastfoot">
+			<div class="inner">
+			  <p><i>Copyright <a href="https://illution.dk">Illution</a> 2014</i></p>
+			</div>
+		  </div>
 
-        </div>
+		</div>
 
-      </div>
+	  </div>
 
-    </div>
+	</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
